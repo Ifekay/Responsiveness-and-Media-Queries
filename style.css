@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+  
+}
+body{
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color:  hsl(0, 100%, 74%);
+    Font-size: 16px; 
+    line-height: 1.6;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem;          
+    max-width: 1440px;
+}
+aside{
+   text-align: center;
+   margin-right: 50px;
+   color: #fff;
+   max-width: 40%;
+   
+   /* width: 100%; */
+} 
+
+
+ aside h1{
+     font-size:  42px; 
+}
+aside{
+    font-size: 80%;
+    /* width: 45%; */
+}
+.main-head{
+    background-color:  hsl(248, 32%, 49%);
+    margin-bottom: 20px;
+    border-radius: 9px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 9px 0 0 rgba(00, 00, 00, 0.1);
+}
+
+main p a{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+form{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+}
+form p{
+    text-align: center;
+    color:  hsl(246, 25%, 77%);
+}
+input{
+    padding: 15px;
+    width: 100%; 
+    margin-bottom: 16px;
+    border-radius: 5px;
+     border: 1px solid #ccc; 
+}
+ input:focus{
+     outline: #ccc;
+    border-bottom: black 1px solid;
+   
+} 
+input[type="submit"]{
+background-color: hsl(154, 59%, 51%);
+color: white;
+border: none;
+text-align: center;
+}
+
+
+
+@media screen  and (max-width: 1100px) {
+    .container {
+       margin: 4rem;
+    }
+    
+}
+@media screen  and (max-width: 855px) {
+   aside h1 {
+       font-size: 2rem;
+    }
+    
+}
+@media screen  and (max-width: 810px) {
+ 
+    .container{
+       display: flex;
+      flex-direction:column;
+      margin:3rem;
+      justify-content:space-between;
+    }
+    aside{
+      max-width:100%;
+       line-height:1.6; 
+      margin-bottom:1rem;
+      text-align:center;
+    }
+    aside h1{
+      font-size: 18px;
+    }
+    
+    aside p{
+      font-size:14px;
+    }
+      
+  }
+@media screen  and (max-width: 580px) {
+ 
+    .container{
+       display: flex;
+      flex-direction:column;
+      margin:1rem;
+      justify-content:space-between;
+    }
+    
+      
+  }
+
+  @media screen  and (max-width:375px) {
+      body{
+          background-image: url("./images/bg-intro-mobile.png"); 
+       
+      }
+    aside h1{
+        font-size: 20px;
+        margin-bottom: 10px;;
+    }
+      
+      
+  }
